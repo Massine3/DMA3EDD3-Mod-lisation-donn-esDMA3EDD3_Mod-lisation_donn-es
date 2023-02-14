@@ -1,51 +1,57 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:ns0="http: www.Td_rdf.com voc#"
+         xmlns:ns0="http: www.Td_rdf.com foaf#"
          xmlns:ns1="http: www.w3.org 2001 XMLSchema#"
          xmlns:ns2="http://www.Td_rdf.com#">
 
   <rdf:Description rdf:about="http://www.Td_rdf.com#Margot">
-    <rdf:type rdf:resource="http: www.Td_rdf.com voc#women"/>
-    <rdf:type rdf:resource="http: www.Td_rdf.com voc#Teacher"/>
+    <rdf:type rdf:resource="http: www.w3.org genre#women"/>
+    <rdf:type rdf:resource="http: www.Td_rdf.com foaf#Teacher"/>
     <ns0:name>Margot</ns0:name>
     <ns1:YearsOld rdf:datatype="http: www.w3.org 2001 XMLSchema#integer">32</ns1:YearsOld>
     <ns1:PantsSize rdf:datatype="http: www.w3.org 2001 XMLSchema#integer">40</ns1:PantsSize>
     <ns1:Size rdf:datatype="http: www.w3.org 2001 XMLSchema#integer">38</ns1:Size>
     <ns0:HasMother>
-      <ns0:women rdf:about="http://www.Td_rdf.com#Simone">
+      <rdf:Description rdf:about="http://www.Td_rdf.com#Simone">
+        <rdf:type rdf:resource="http: www.w3.org genre#women"/>
         <ns0:name>simone</ns0:name>
-      </ns0:women>
+      </rdf:Description>
     </ns0:HasMother>
 
     <ns0:havechilden rdf:resource="http://www.Td_rdf.com#Marie"/>
     <ns0:havechilden>
-      <ns0:men rdf:about="http://www.Td_rdf.com#Simon">
+      <rdf:Description rdf:about="http://www.Td_rdf.com#Simon">
+        <rdf:type rdf:resource="http: www.w3.org genre#men"/>
         <ns0:name>Simon</ns0:name>
-      </ns0:men>
+      </rdf:Description>
     </ns0:havechilden>
 
     <ns0:MarriedTo>
-      <ns0:men rdf:about="http://www.Td_rdf.com#Arthur">
+      <rdf:Description rdf:about="http://www.Td_rdf.com#Arthur">
+        <rdf:type rdf:resource="http: www.w3.org genre#men"/>
         <ns0:name>Arthur</ns0:name>
         <ns0:havechildren rdf:resource="http://www.Td_rdf.com#Marie"/>
         <ns2:Simon rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></ns2:Simon>
-      </ns0:men>
+      </rdf:Description>
     </ns0:MarriedTo>
 
     <ns0:HasCollegues>
-      <ns0:women rdf:about="http://www.Td_rdf.com#Alice">
+      <rdf:Description rdf:about="http://www.Td_rdf.com#Alice">
+        <rdf:type rdf:resource="http: www.w3.org genre#women"/>
         <ns0:name>Alice</ns0:name>
-      </ns0:women>
+      </rdf:Description>
     </ns0:HasCollegues>
 
   </rdf:Description>
 
-  <ns0:women rdf:about="http://www.Td_rdf.com#Marie">
+  <rdf:Description rdf:about="http://www.Td_rdf.com#Marie">
+    <rdf:type rdf:resource="http: www.w3.org genre#women"/>
     <ns0:name>Marie</ns0:name>
-  </ns0:women>
+  </rdf:Description>
 
-  <ns0:men rdf:about="http://www.Td_rdf.com#Pierre">
+  <rdf:Description rdf:about="http://www.Td_rdf.com#Pierre">
+    <rdf:type rdf:resource="http: www.w3.org genre#men"/>
     <ns0:name>Pierre</ns0:name>
-  </ns0:men>
+  </rdf:Description>
 
 </rdf:RDF>
