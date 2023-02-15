@@ -1,0 +1,35 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf:  <http: www.Td_rdf.com foaf#> .
+@prefix xml:  <http: www.w3.org XML 1998 namespace> .
+@prefix xsd:  <http: www.w3.org 2001 XMLSchema#> .
+@prefix ex:  <http: www.w3.org genre#> .
+
+<http://www.Td_rdf.com#Margot> a ex:women, foaf:Teacher ;
+  foaf:name  "Margot" ;
+  xsd:YearsOld "32"^^xsd:integer ;
+  xsd:PantsSize "40"^^xsd:integer ;
+  xsd:Size "38"^^xsd:integer ;
+  foaf:HasMother <http://www.Td_rdf.com#Simone> ;
+  foaf:havechilden  <http://www.Td_rdf.com#Marie>,
+                              <http://www.Td_rdf.com#Simon> ;
+  foaf:MarriedTo <http://www.Td_rdf.com#Arthur> ;
+  foaf:HasCollegues <http://www.Td_rdf.com#Alice>,
+                                <http://www.Td_rdf.com#Pierre>.
+
+<http://www.Td_rdf.com#Simone> a ex:women ;
+  foaf:name "simone" .
+
+<http://www.Td_rdf.com#Marie> a ex:women ;
+  foaf:name "Marie" .
+<http://www.Td_rdf.com#Simon> a ex:men ;
+  foaf:name "Simon" .
+
+<http://www.Td_rdf.com#Arthur> a ex:men ;
+  foaf:name "Arthur" ;
+  foaf:havechildren <http://www.Td_rdf.com#Marie>;
+                              <http://www.Td_rdf.com#Simon> .
+
+<http://www.Td_rdf.com#Alice> a ex:women ;
+  foaf:name "Alice" .
+<http://www.Td_rdf.com#Pierre> a ex:men ;
+  foaf:name "Pierre" .
