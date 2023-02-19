@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http: www.Td_rdf.com/foaf#"
+         xmlns:ns1="http: www.w3.org 2001/XMLSchema#"
+         xmlns:ns2="http: www.w3.org/relation#">
+
+  <rdf:Description rdf:about="http://www.Td_rdf.com#Margot">
+    <rdf:type rdf:resource="http: www.w3.org/genre#women"/>
+    <rdf:type rdf:resource="http: www.Td_rdf.com/foaf#Teacher"/>
+    <ns0:name>Margot</ns0:name>
+    <ns1:YearsOld rdf:datatype="http: www.w3.org 2001/XMLSchema#integer">32</ns1:YearsOld>
+    <ns1:PantsSize rdf:datatype="http: www.w3.org 2001/XMLSchema#integer">40</ns1:PantsSize>
+    <ns1:Size rdf:datatype="http: www.w3.org 2001/XMLSchema#integer">38</ns1:Size>
+    <ns2:HasMother>
+      <rdf:Description rdf:about="http://www.Td_rdf.com#Simone">
+        <rdf:type rdf:resource="http: www.w3.org/genre#women"/>
+        <ns0:name>simone</ns0:name>
+      </rdf:Description>
+    </ns2:HasMother>
+
+    <ns2:havechilden rdf:resource="http://www.Td_rdf.com#Marie"/>
+    <ns2:havechilden rdf:resource="http://www.Td_rdf.com#Simon"/>
+    <ns2:MarriedTo>
+      <rdf:Description rdf:about="http://www.Td_rdf.com#Arthur">
+        <rdf:type rdf:resource="http: www.w3.org/genre#men"/>
+        <ns0:name>Arthur</ns0:name>
+        <ns0:havechildren rdf:resource="http://www.Td_rdf.com#Marie"/>
+        <ns0:havechildren rdf:resource="http://www.Td_rdf.com#Simon"/>
+      </rdf:Description>
+    </ns2:MarriedTo>
+
+    <ns2:HasCollegues>
+      <rdf:Description rdf:about="http://www.Td_rdf.com#Alice">
+        <rdf:type rdf:resource="http: www.w3.org/genre#women"/>
+        <ns0:name>Alice</ns0:name>
+      </rdf:Description>
+    </ns2:HasCollegues>
+
+    <ns2:HasCollegues>
+      <rdf:Description rdf:about="http://www.Td_rdf.com#Pierre">
+        <rdf:type rdf:resource="http: www.w3.org/genre#men"/>
+        <ns0:name>Pierre</ns0:name>
+      </rdf:Description>
+    </ns2:HasCollegues>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.Td_rdf.com#Marie">
+    <rdf:type rdf:resource="http: www.w3.org/genre#women"/>
+    <ns0:name>Marie</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.Td_rdf.com#Simon">
+    <rdf:type rdf:resource="http: www.w3.org/genre#men"/>
+    <ns0:name>Simon</ns0:name>
+  </rdf:Description>
+
+</rdf:RDF>
