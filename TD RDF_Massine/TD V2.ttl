@@ -5,32 +5,32 @@
 @prefix rel: <http: www.w3.org/relation#> .
 @prefix ex:  <http: www.w3.org/genre#> .
 
-<http://www.Td_rdf.com#Margot> a ex:women, foaf:Teacher ;
+<http://www.Td_rdf.com#Margot> a ex:woman, foaf:Teacher ;
   foaf:name  "Margot" ;
   xsd:YearsOld "32"^^xsd:integer ;
   xsd:PantsSize "40"^^xsd:integer ;
   xsd:Size "38"^^xsd:integer ;
 
-  rel:HasMother <http://www.Td_rdf.com#Simone> ;
-  rel:havechilden  <http://www.Td_rdf.com#Marie>, <http://www.Td_rdf.com#Simon> ;
+  rel:HasMother <http: www.w3.org/relation#Simone> ;
+  rel:havechilden  <http: www.w3.org/relation#Marie>, <http: www.w3.org/relation#Simon> ;
 
-  rel:MarriedTo <http://www.Td_rdf.com#Arthur> ;
+  rel:MarriedTo <http: www.w3.org/relation#Arthur> ;
 
-  rel:HasCollegues <http://www.Td_rdf.com#Alice>, <http://www.Td_rdf.com#Pierre>.
+  rel:HasCollegues <http: www.w3.org/relation#Alice>, <http: www.w3.org/relation#Pierre>.
 
-<http://www.Td_rdf.com#Simone> a ex:women ;
+<http://www.Td_rdf.com#Simone> a ex:woman ;
   foaf:name "simone" .
 
-<http://www.Td_rdf.com#Marie> a ex:women ;
+<http://www.Td_rdf.com#Marie> a ex:woman ;
   foaf:name "Marie" .
-<http://www.Td_rdf.com#Simon> a ex:men ;
+<http://www.Td_rdf.com#Simon> a ex:man ;
   foaf:name "Simon" .
 
-<http://www.Td_rdf.com#Arthur> a ex:men ;
+<http://www.Td_rdf.com#Arthur> a ex:man ;
   foaf:name "Arthur" ;
-  foaf:havechildren <http://www.Td_rdf.com#Marie>, <http://www.Td_rdf.com#Simon> .
+  foaf:havechildren <http: www.w3.org/relation#Marie>, <http: www.w3.org/relation#Simon> .
 
-<http://www.Td_rdf.com#Alice> a ex:women ;
+<http://www.Td_rdf.com#Alice> a ex:woman ;
   foaf:name "Alice" .
-<http://www.Td_rdf.com#Pierre> a ex:men ;
+<http://www.Td_rdf.com#Pierre> a ex:man ;
   foaf:name "Pierre" .
